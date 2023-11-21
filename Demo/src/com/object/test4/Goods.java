@@ -1,17 +1,20 @@
-package com.object.test2;
+package com.object.test4;
 
-public class Student {
+public class Goods {
     private String id;
     private String name;
-    private int age;
+    private double price;
+    private int count;
 
-    public Student() {
+
+    public Goods() {
     }
 
-    public Student(String id, String name, int age) {
+    public Goods(String id, String name, double price, int count) {
         this.id = id;
         this.name = name;
-        this.age = age;
+        this.price = price;
+        this.count = count;
     }
 
     /**
@@ -53,19 +56,38 @@ public class Student {
     /**
      * 获取
      *
-     * @return age
+     * @return price
      */
-    public int getAge() {
-        return age;
+    public double getPrice() {
+        return price;
     }
 
     /**
      * 设置
      *
-     * @param age
+     * @param price
      */
-    public void setAge(int age) {
-        this.age = age;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
+    /**
+     * 获取
+     *
+     * @return count
+     */
+    public int getCount() {
+        return count;
+    }
+
+    /**
+     * 设置
+     *
+     * @param count
+     */
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+   
 }
