@@ -111,7 +111,7 @@ public class StudentSystem {
             System.out.println("请输输入学生新地址");
             String newAddress = sc.next();
             stu.setAddress(newAddress);
-
+            System.out.println("学生信息修改成功");
         } else {
             System.out.println("没有查询到学生信息");
         }
