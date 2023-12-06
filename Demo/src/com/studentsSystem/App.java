@@ -8,14 +8,15 @@ public class App {
         ArrayList<User> list = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
-        while (true){
+        while (true) {
             System.out.println("---------欢迎来到学生管理系统----------");
             System.out.println("1：登录");
             System.out.println("2：注册");
             System.out.println("3：忘记密码");
+            System.out.println("4：退出");
             System.out.println("请输入您的选择：");
             String choose = sc.next();
-            switch (choose){
+            switch (choose) {
                 case "1":
                     login();
                     break;
@@ -25,11 +26,20 @@ public class App {
                 case "3":
                     forgetPassword();
                     break;
+                case "4":
+                    logout();
+                    break;
                 default:
                     System.out.println("没有这个选项，请重新输入");
                     break;
             }
         }
+    }
+
+    private static void logout() {
+        System.out.println("退出成功！");
+        System.exit(0);
+
     }
 
     private static void forgetPassword() {
