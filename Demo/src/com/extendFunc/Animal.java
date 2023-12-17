@@ -1,6 +1,7 @@
 package com.extendFunc;
 
 public class Animal {
+      
     public void eat() {
         System.out.println("吃饭");
     }
