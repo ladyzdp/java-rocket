@@ -1,5 +1,7 @@
 package com.cloneDemo;
 
+import com.google.gson.Gson;
+
 public class ObjectDemo1 {
     public static void main(String[] args) {
         int[] data = {1, 2, 3, 4, 5, 6, 7, 8};
@@ -19,5 +21,10 @@ public class ObjectDemo1 {
         stud.getSubj().setName("流星");
         System.out.println("更新后的原对象和拷贝对象name属性是否一致：" + stud.getName() + "--" + cloneStud.getSubj().getName());
         System.out.println("更新后的原对象和拷贝对象subj属性是否一致：" + stud.getName() + "--" + cloneStud.getSubj().getName());
+
+        Gson gson = new Gson();
+        String s = gson.toJson(data);
+        System.out.println(s);
+
     }
 }
